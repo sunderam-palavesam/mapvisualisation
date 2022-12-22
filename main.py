@@ -23,7 +23,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #read csv and laod to a pandas dataframe
-df = pd.read_csv("C:\SSP\masters\ProgLang\wip\GrowLocations.csv")
+df = pd.read_csv("C:\SSP\masters\ProgLang\mapvisualisation\GrowLocations.csv")
 
 #data cleansing , remove dupes and extract latitudes and longitudes
 myCols =  ['Latitude','Longitude']
@@ -39,7 +39,7 @@ print(df1)
 BBox = (-10.592,   1.6848,  50.681, 57.985)
 
 #load the map image
-myMap = plt.imread('C:\SSP\masters\ProgLang\wip\map7.png')
+myMap = plt.imread('C:\SSP\masters\ProgLang\mapvisualisation\map7.png')
 
 #create a figure and set of subplot
 fig, ax = plt.subplots(figsize = (8,10))
